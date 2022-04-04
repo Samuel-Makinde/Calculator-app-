@@ -1,39 +1,44 @@
 #include <stdio.h>
 #include <stdlib.h>
-/* Description: using if-else statements to print a simple calculator
-   Time: 12:14pm
-   Author: Makinde Samuel
+#include <conio.h>
+
+/* Description: using switch statement to build a simple calculator
+   Time: 12:37
    Date: 4/4/2022
+   Author: Makinde Samuel
 */
+
 
 int main()
 {
     int num1, num2, result;
     char sign;
-    printf("Enter calculation with any of this operator (+, *, -, /):\n\n");
+    printf("Enter calculation using any of this operator (+, -, , /):\n\n");
     scanf("%d %c %d", &num1, &sign, &num2);
-    if(sign=='+')
+    switch(sign)
     {
+    case '+':
         result=num1+num2;
         printf("%d", result);
-    }
-    else if(sign=='-')
-    {
+        break;
+    case '-':
         result=num1-num2;
         printf("%d", result);
-    }
-    else if(sign=='*')
-    {
+        break;
+    case '*':
         result=num1*num2;
         printf("%d", result);
-    }
-    else if(sign=='/')
-    {
+        break;
+    case '/':
         result=num1/num2;
         printf("%d", result);
+        break;
+    default:
+        printf("operator not correct");
     }
-    else
-        printf("wrong operator!");
+    printf("\nThanks!");
+
 
     return 0;
 }
+
