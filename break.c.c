@@ -20,7 +20,7 @@ int main()
              {
                  break;
              }
-        i++;
+        
         sum = sum+a;
     }
     printf("The total sum is %d", sum);
