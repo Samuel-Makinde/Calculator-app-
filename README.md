@@ -1,6 +1,6 @@
 # Projects
 # Calculator.c  
-To build a simple calculator using for loop.
+To build a simple calculator using for loop with C language.
 # main.c 
 To build a simple calculator using switch.
 # break.c 
